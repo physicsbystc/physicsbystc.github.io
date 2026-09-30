@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#dae2fd","error":"#ba1a1a","surface-container":"#eaedff","on-tertiary-fixed-variant":"#653e00","surface-container-low":"#f2f3ff","surface":"#faf8ff","primary-fixed":"#dce1ff","primary":"#00236f","on-primary-fixed-variant":"#264191","on-surface":"#131b2e","tertiary-fixed":"#ffddb8","on-error":"#ffffff","on-error-container":"#93000a","on-tertiary-fixed":"#2a1700","error-container":"#ffdad6","inverse-surface":"#283044","primary-fixed-dim":"#b6c4ff","on-tertiary-container":"#ef9900","secondary":"#006591","inverse-primary":"#b6c4ff","on-primary-fixed":"#00164e","tertiary-fixed-dim":"#ffb95f","tertiary-container":"#5c3800","surface-tint":"#4059aa","on-secondary-container":"#004666","secondary-fixed":"#c9e6ff","on-secondary-fixed":"#001e2f","surface-container-high":"#e2e7ff","inverse-on-surface":"#eef0ff","tertiary":"#3e2400","on-surface-variant":"#444651","outline-variant":"#c5c5d3","surface-container-highest":"#dae2fd","primary-container":"#1e3a8a","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","on-primary":"#ffffff","on-secondary":"#ffffff","secondary-fixed-dim":"#89ceff","on-background":"#131b2e","background":"#faf8ff","surface-bright":"#faf8ff","on-secondary-fixed-variant":"#004c6e","outline":"#757682","surface-dim":"#d2d9f4","on-primary-container":"#90a8ff","secondary-container":"#39b8fd"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{gutter:"1.5rem","gutter-mobile":"1rem",margin:"3rem","space-xs":"0.25rem","space-xl":"2.5rem","space-sm":"0.5rem","margin-mobile":"1rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"label-meta":["JetBrains Mono"],"label-code":["JetBrains Mono"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"title-md":["Inter"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"label-meta":["11px",{lineHeight:"16px",letterSpacing:"0.06em",fontWeight:"600"}],"label-code":["14px",{lineHeight:"20px",letterSpacing:"-0.01em",fontWeight:"500"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}],"body-lg":["18px",{lineHeight:"30px",fontWeight:"400"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"700"}],"title-md":["18px",{lineHeight:"26px",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1360px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="home" href="#"><div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-[0_1px_3px_rgba(15,23,42,0.06)]">Ψ</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary leading-none">PHYSICS <span class="text-secondary">STC</span></span><span class="font-label-meta text-label-meta text-on-surface-variant uppercase mt-1 tracking-wider">Subin Sir's Portal</span></div></a><div class="hidden xl:flex items-center relative w-64"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-secondary-container" placeholder="Search formulas, modules..." type="text"/></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg"><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="https://www.youtube.com/@PhysicsbySTC" rel="noopener noreferrer" target="_blank">YouTube Lectures</a><a class="text-secondary font-label-meta text-label-meta hover:text-primary transition-colors flex items-center gap-1 font-bold" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank"><span>VIEW FULL 4-STEP PROOF ON PADLET</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#ask-subin-sir">CBSE 12th</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#ask-subin-sir">JEE &amp; NEET</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="https://physicsbystc.blogspot.com/" rel="noopener noreferrer" target="_blank">Blog Articles</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#handouts-compendium">Formula &amp; Derivations</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#ask-subin-sir">Ask Subin Sir</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface-container rounded-lg text-secondary hover:bg-surface-container-high transition-colors font-label-meta text-label-meta" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20have%20an%20enquiry%20regarding%20Physics%20by%20STC%20classes" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">chat</span><span>WHATSAPP HUB</span></a><a class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors" href="https://www.linkedin.com/in/subinthomas-educator" rel="noopener noreferrer" target="_blank" title="Er. Subin Sir LinkedIn"><span class="material-symbols-outlined text-[18px]">person</span></a></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Announcement Banner -->
+<aside aria-label="Academic Announcements" class="w-full bg-primary text-on-primary py-2.5 px-gutter shadow-sm">
+<div class="max-w-[1360px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-xs text-center md:text-left">
+<div class="flex items-center gap-space-sm flex-wrap justify-center">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-meta text-label-meta uppercase tracking-wider font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+          Live Dispatch
+        </span>
+<p class="font-body-sm text-body-sm text-surface">
+<strong class="font-semibold text-secondary-fixed">Subin Sir's Desk:</strong> CBSE 2025 Crash Cohort &amp; NEET Speed Worksheets live. New YouTube Marathons uploaded to the repository.
+        </p>
+</div>
+<a class="inline-flex items-center gap-1 text-secondary-fixed hover:text-surface font-label-meta text-label-meta tracking-wider transition-colors shrink-0" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20would%20like%20to%20claim%20the%20CBSE%202025%20Crash%20Cohort%20%26%20NEET%20Speed%20Worksheet%20Set" rel="noopener" target="_blank">
+        CLAIM WORKSHEET SET
+        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</aside>
+<!-- Hero Section -->
+<section class="w-full bg-surface-container-low py-space-xl overflow-hidden relative">
+<div class="max-w-[1360px] mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<!-- Left Column: Copy & Direct CTAs -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-surface-container text-primary font-label-meta text-label-meta tracking-wider">ACADEMIC RIGOUR • ISO VERIFIED</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-secondary font-label-meta text-label-meta tracking-wider">PHYSICS BY STC</span>
+<span class="px-2.5 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-meta text-label-meta tracking-wider font-semibold">2025 BATCHES LIVE</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg lg:text-[44px] lg:leading-[52px] text-primary font-bold tracking-tight">
+            Conceptual Rigor.<br/>
+<span class="text-secondary">Board Precision.</span><br/>
+            JEE &amp; NEET Rank Mastery.
+          </h1>
+<blockquote class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] shrink-0">format_quote</span>
+<div class="flex flex-col gap-1">
+<p class="font-body-md text-body-md text-on-surface italic">
+                “Physics is not an encyclopedia of arbitrary equations to be memorized blindly for an afternoon test. It is nature’s most symmetric, elegant dialect. Once you comprehend the first derivative of reality, formulas become natural instincts.”
+              </p>
+<span class="font-label-meta text-label-meta text-primary font-bold tracking-wider">— ER. SUBIN SIR (HEAD OF FACULTY, STC)</span>
+</div>
+</blockquote>
+</div>
+<!-- 3 Primary Portals Action Strip -->
+<div class="flex flex-wrap items-center gap-space-sm pt-2"><a class="px-5 py-3 rounded-lg bg-primary text-on-primary font-title-md text-title-md hover:bg-primary-container transition-all flex items-center gap-2 shadow-md" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20would%20like%20to%20know%20more%20about%20your%20Physics%20coaching" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span><span>WhatsApp Subin Sir</span></a><a class="px-5 py-3 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-high font-title-md text-title-md transition-all flex items-center gap-2 shadow-sm" href="https://www.youtube.com/@PhysicsbySTC" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-error text-[20px]">smart_display</span><span>YouTube Lectures</span></a><a class="px-5 py-3 rounded-lg bg-surface-container-highest text-on-surface hover:bg-surface-variant font-title-md text-title-md transition-all flex items-center gap-2" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-secondary text-[20px]">dashboard</span><span>Padlet Wall</span></a></div>
+<!-- Key Metrics Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">70/70</span>
+<p class="font-label-meta text-label-meta text-on-surface-variant mt-0.5">CBSE TARGET SCORE</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-headline-md text-headline-md text-secondary font-bold tracking-tight">99.8%</span>
+<p class="font-label-meta text-label-meta text-on-surface-variant mt-0.5">JEE ADVANCED PEAK</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-headline-md text-headline-md text-on-tertiary-container font-bold tracking-tight">160+</span>
+<p class="font-label-meta text-label-meta text-on-surface-variant mt-0.5">NEET PHYSICS BENCHMARK</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">1000s</span>
+<p class="font-label-meta text-label-meta text-on-surface-variant mt-0.5">PADLET HANDOUTS &amp; DPPs</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Featured Derivation Node -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Interactive Derivation Showcase -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-meta text-label-meta font-bold">CORE DERIVATION SHOWCASE</span>
+<span class="font-label-meta text-label-meta text-secondary font-semibold">CBSE 12th • CH-08</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Ampere-Maxwell Law &amp; Displacement Current</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Resolution of Ampere's circuital inconsistency between capacitor plates under alternating charge.</p>
+<!-- Equation Box -->
+<div class="my-space-md p-space-md rounded-lg bg-surface-container-low font-label-code text-label-code text-primary overflow-x-auto shadow-inner flex flex-col gap-2">
+<div class="flex items-center justify-between text-on-surface-variant font-label-meta text-label-meta pb-1">
+<span>INTEGRAL FORMULATION</span>
+<button class="px-2 py-0.5 rounded bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-1 text-primary" onclick="copyEquation('oint B cdot dl = mu_0 (I_c + varepsilon_0 frac{dPhi_E}{dt})', this)">
+<span class="material-symbols-outlined text-[13px]">content_copy</span>
+<span>Copy TeX</span>
+</button>
+</div>
+<div class="text-[16px] tracking-wide font-bold py-1">
+              ∮ <strong class="text-secondary">B</strong> ⋅ d<strong class="text-secondary">l</strong> = μ<sub>0</sub> ( I<sub>c</sub> + ε<sub>0</sub> · <span class="text-error">dΦ<sub>E</sub>/dt</span> )
+            </div>
+<div class="text-[13px] text-on-surface-variant">
+              Where <span class="font-bold text-on-surface">I<sub>d</sub> = ε<sub>0</sub> (dΦ<sub>E</sub>/dt)</span> satisfies continuity of current in dielectric gaps.
+            </div>
+</div>
+<!-- Derivation Visual Breakdown -->
+<div class="space-y-2 mb-space-md">
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Gauss flux through plate: <code class="font-label-code text-[12px] bg-surface px-1.5 py-0.5 rounded">Φ<sub>E</sub> = q / ε<sub>0</sub></code></span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Differentiating w.r.t time: <code class="font-label-code text-[12px] bg-surface px-1.5 py-0.5 rounded">dΦ<sub>E</sub>/dt = (1/ε<sub>0</sub>)(dq/dt)</code></span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-semibold text-primary">Hence: <code class="font-label-code text-[12px] bg-surface px-1.5 py-0.5 rounded">I<sub>d</sub> = ε<sub>0</sub>(dΦ<sub>E</sub>/dt) = I<sub>c</sub></code></span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<a class="px-5 py-3 rounded-lg bg-surface-container-highest text-on-surface hover:bg-surface-variant font-title-md text-title-md transition-all flex items-center gap-2" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-secondary text-[20px]">dashboard</span><span>Padlet Wall</span></a>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-meta text-label-meta">3 MARKS CBSE</span>
+</div>
+</div>
+<!-- Instructor Profile Card -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-md flex items-center gap-space-md"><div class="w-16 h-16 rounded-full overflow-hidden bg-primary shrink-0 relative shadow-md"><img class="w-full h-full object-cover" data-alt="Portrait photo of Er Subin Sir, senior physics master educator wearing scholarly spectacles and professional attire standing before an academic whiteboard covered in electromagnetic wave equations, warm focused classroom studio lighting, deep sapphire and navy institutional tones, photorealistic high resolution portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwOgcDtvrL5zWVYvrj-bgyqY6DbX-B1djpKUqYFk9uZHvi1nxJMO3oZbCykJl-Lw5lyg2QIMxZ803kZXRcf93t8tWquehBrLcmSD9YuMzWX07tgqTC42ncqua469sUm6G14vnPjNrusZgWkZwAvrVHp3ogF8AwUTS89KhSV5bZpAULx70FkT9OB5ZE4S8fkIs41cTpLHEh9mEhednx7jWO-5kMPXY4lfXFy2CTtE7dPql6TtEm-klz"/></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between gap-1.5"><div class="flex items-center gap-1.5 min-w-0"><h3 class="font-title-md text-title-md text-on-primary font-bold truncate">Er. Subin Sir</h3><span class="material-symbols-outlined text-secondary-container text-[18px]" title="STC Certified Faculty">verified</span></div><a class="px-2 py-1 rounded bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed transition-colors font-label-meta text-[11px] font-bold flex items-center gap-1 shrink-0" href="https://www.linkedin.com/in/subinthomas-educator" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[13px]">open_in_new</span><span>LinkedIn</span></a></div><p class="font-body-sm text-body-sm text-surface-variant truncate">Lead Physics Mentor • Ex-Kota Academic Specialist</p><p class="font-label-meta text-label-meta text-secondary-fixed mt-1">10+ Years Pedagogy • 4,200+ Mentored Scholars</p></div></div>
+</div>
+</div>
+</section>
+<!-- Section 3: YouTube Masterclass Video Vault -->
+<section class="w-full py-space-xl bg-surface" id="youtube-vault">
+<div class="max-w-[1360px] mx-auto px-gutter flex flex-col gap-space-xl">
+<!-- Section Header with YouTube Channel Banner -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-sm">
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-2 text-error font-label-meta text-label-meta tracking-wider">
+<span class="material-symbols-outlined text-[18px]">smart_display</span>
+<span>YOUTUBE ARCHIVAL LECTURES &amp; MARATHONS</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">Subin Sir's Masterclass Video Vault</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Full-spectrum conceptual whiteboards, multi-hour derivation marathons, and solved previous-year JEE/NEET question banks with visual clarity.
+          </p>
+</div>
+<!-- YouTube Subscription CTA Box -->
+<a class="p-space-sm rounded-xl bg-surface-container-high hover:bg-surface-variant transition-all flex items-center gap-space-md shadow-sm shrink-0" href="https://www.youtube.com/@PhysicsbySTC?sub_confirmation=1" rel="noopener" target="_blank">
+<div class="w-12 h-12 rounded-lg bg-error text-on-error flex items-center justify-center font-bold text-headline-sm">
+<span class="material-symbols-outlined text-[28px]">play_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Physics by STC Channel</span>
+<span class="font-label-meta text-label-meta text-on-surface-variant">SUBSCRIBE FOR DAILY PROBLEM DROPS</span>
+</div>
+<div class="px-3 py-1.5 rounded bg-error text-on-error font-label-meta text-label-meta font-bold ml-2">
+            SUBSCRIBE
+          </div>
+</a>
+</div>
+<!-- Featured Video Player Simulator -->
+<div class="w-full rounded-2xl bg-inverse-surface text-inverse-on-surface overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12">
+<div class="lg:col-span-8 relative group bg-primary">
+<div class="w-full aspect-video relative flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover opacity-80" data-alt="High quality educational video lecture frame preview showing Subin Sir standing at a high tech digital glassboard sketching Gauss's theorem spherical surfaces with electric flux vector field lines in electric cyan and sapphire blue, university physics laboratory backdrop, modern pedagogical video presentation style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX_WEzO6uAWi88WJ3F51Z1zcBgCX6ZbgUOi854pCIIhsusHsJGjUaDIVL37T-9xMKGxbDz2nSmxd6fbIhmIIZlV_VPXuoDCoZ1t1D0hT6own_35I42KpwZK3tqRvd_kJiuKV94pSgW3iXWNp7sXazbDFq7A_haXjFxARuTExcCr6YU6EBvCNfeoEgb8rk6lJqbwM_JrvIsnd0xyPxmVqk8C9HGMwlaIMseE8C0AIsOSfxa5SiFtgM8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-transparent to-black/30"></div>
+<!-- Video Overlay Play Button -->
+<button class="absolute w-20 h-20 rounded-full bg-error text-on-error flex items-center justify-center shadow-2xl transform transition hover:scale-110 active:scale-95 z-20" onclick="launchVideoModal('Gauss\\'s Law &amp; Electric Flux Masterclass')">
+<span class="material-symbols-outlined text-[42px] ml-1">play_arrow</span>
+</button>
+<!-- Video Timeline Simulation -->
+<div class="absolute bottom-4 left-4 right-4 flex flex-col gap-1.5 z-20">
+<div class="flex items-center justify-between text-white font-label-meta text-label-meta">
+<span>01:14:20 / 02:45:00 • 4K UHD</span>
+<span class="px-2 py-0.5 rounded bg-error/90 uppercase font-bold">CBSE 12th Board Core Focus</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-white/20 overflow-hidden">
+<div class="h-full bg-secondary-container w-[45%] rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Video Lecture Index & Outline Panel -->
+<div class="lg:col-span-4 p-space-lg flex flex-col justify-between bg-inverse-surface">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-secondary text-white font-label-meta text-label-meta">FEATURED MASTERCLASS</span>
+<span class="font-label-meta text-label-meta text-surface-variant">EPISODE #14</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-snug">
+              Gauss's Law, Electric Flux &amp; Infinite Wire Derivation Series
+            </h3>
+<p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">
+              Step-by-step mathematical dissection of Gaussian surfaces, cylindrical symmetries, and planar dielectric boundary conditions. Includes 8 solved PYQ drills.
+            </p>
+<!-- Chapter Timestamps -->
+<div class="flex flex-col gap-1.5 pt-2">
+<span class="font-label-meta text-label-meta text-secondary-fixed">LECTURE TIMESTAMPS:</span>
+<div class="flex items-center justify-between p-2 rounded bg-surface-variant/10 text-body-sm hover:bg-surface-variant/20 transition-colors">
+<span>00:00 — Concept of Area Vector &amp; Solid Angle</span>
+<span class="font-label-meta text-label-meta text-secondary-container">12 min</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-variant/10 text-body-sm hover:bg-surface-variant/20 transition-colors">
+<span>18:45 — Proof: Electric Field of Infinitely Long Straight Wire</span>
+<span class="font-label-meta text-label-meta text-secondary-container">26 min</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-variant/10 text-body-sm hover:bg-surface-variant/20 transition-colors">
+<span>44:30 — Charged Spherical Shell (Inside &amp; Outside E-Field)</span>
+<span class="font-label-meta text-label-meta text-secondary-container">34 min</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<a class="w-full py-2.5 rounded-lg bg-secondary hover:bg-primary-container text-white font-title-md text-title-md transition-colors flex items-center justify-center gap-2" href="https://www.youtube.com/@PhysicsbySTC" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[18px]">smart_display</span>
+<span>Watch Full Lecture Free</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 4 Chapter Lecture Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Video Card 1 -->
+<article class="bg-surface-container-low hover:bg-surface-container transition-all rounded-xl overflow-hidden shadow-sm flex flex-col group">
+<div class="w-full aspect-video bg-surface-container-high relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Electromagnetic Spectrum wavelength chart and oscillating electric and magnetic dipoles illustrated in deep sapphire, cyan, and violet academic diagram, 3d conceptual scientific render." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHiw-1N4rtSJCJJXvpiEHAQfF8aSMH6abqszp6xGvhfsHjh1jdIPPJN8W89HWwcgZD_J0NI6IQCo8qFKlBCc7JZZYR0j0HX42EC6aJ0Sq7EZVx9ftrmmn2YVhypfaTBIw0LLHHw8yU5LGUFBYzgpvRYIKi19cXiQQ8ABAkOMfEPEYdNO7JN5RxEBDWMhuAIXji_8zR4Vtuxddj5PcpIF7yWs_F7lvzj-1XHrCmDSHIOu_UwAEFOCAZ"/>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-white font-label-meta text-[10px]">48:15</span>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-primary text-white font-label-meta text-label-meta">CLASS 12</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-meta text-label-meta text-secondary font-bold">ELECTROMAGNETISM // CH-08</span>
+<h4 class="font-title-md text-title-md text-primary font-bold leading-tight">EM Waves Spectrum &amp; Displacement Proofs</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Complete traversal of wavelength ranges, production methods, and Poynting vector intuition.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-meta text-label-meta text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> 14.8k views
+              </span>
+<a class="text-secondary hover:text-primary font-label-meta text-label-meta font-bold flex items-center gap-0.5" href="https://www.youtube.com/@PhysicsbySTC" rel="noopener" target="_blank">
+                WATCH <span class="material-symbols-outlined text-[14px]">play_arrow</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Video Card 2 -->
+<article class="bg-surface-container-low hover:bg-surface-container transition-all rounded-xl overflow-hidden shadow-sm flex flex-col group">
+<div class="w-full aspect-video bg-surface-container-high relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Ray optics diagram showing convex lens refraction, focal length derivations, lens makers formula curvature geometry, precision physics educational diagram with cyan ray paths on sapphire canvas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNLoWJeeIf3_WY5hQAGuHrnhC0NYZvo52_kBN8JHaQwgdATREq0Y3gEPsX88GOu9J2v-3SPRnfuKExh76LGtJ55CLXFcM2YAsodUNOMuLQlpMNfVCb2WmLZcSxHhg_-aZQFu-Z79yQ0lc0ZnnANKCe7IoOU-a0kbxlFIJ_foIwF99EheYpwaL8o1_Y9mA0K8xvk6CSxK5Rtc3APfhfZMaFQhgDe89SDrUnaHb1WNHCIJzV-Y07H1Mz"/>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-white font-label-meta text-[10px]">1:12:40</span>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-primary text-white font-label-meta text-label-meta">BOARD CORE</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-meta text-label-meta text-secondary font-bold">RAY OPTICS // CH-09</span>
+<h4 class="font-title-md text-title-md text-primary font-bold leading-tight">Lens Maker’s Formula &amp; Microscopes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Step-by-step refractive index derivation with sign conventions and compound microscope ray tracing.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-meta text-label-meta text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> 22.3k views
+              </span>
+<a class="text-secondary hover:text-primary font-label-meta text-label-meta font-bold flex items-center gap-0.5" href="https://www.youtube.com/@PhysicsbySTC" rel="noopener" target="_blank">
+                WATCH <span class="material-symbols-outlined text-[14px]">play_arrow</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Video Card 3 -->
+<article class="bg-surface-container-low hover:bg-surface-container transition-all rounded-xl overflow-hidden shadow-sm flex flex-col group">
+<div class="w-full aspect-video bg-surface-container-high relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Parallel plate capacitor circuit diagram with dielectric slab insertion, electric field redistribution vectors, charge distribution graph, high precision academic engineering schematic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS1haAw5gcjk7y1P5LSKTP9yJRTBAE6sHAZUOEQiFeGkdyiOBXWv8nGs_uKGZsO63ZKjNo9gPQx0EW34a2T1MpRAzrWrDpOgSzi-ADrdm1Rhh6E0mFuQSB3P9Q9kjk-UloG-KMSNrO6V-4MK3GtzFcasE46PdW2_0RUpoo-O1RRhqGdwgwU1ZHdEVnBJHJNuFUiyUYxx52cR4_Xqhcipo4BsCPmxx_RgIedF2WF5p4efC5--YIl-Jy"/>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-white font-label-meta text-[10px]">55:10</span>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-secondary text-white font-label-meta text-label-meta">JEE SPEED</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-meta text-label-meta text-secondary font-bold">ELECTROSTATICS // CH-02</span>
+<h4 class="font-title-md text-title-md text-primary font-bold leading-tight">Capacitor Combinations &amp; Dielectrics</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Symmetric charge distribution, nodal voltage analysis, and energy loss across battery disconnections.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-meta text-label-meta text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> 19.5k views
+              </span>
+<a class="text-secondary hover:text-primary font-label-meta text-label-meta font-bold flex items-center gap-0.5" href="https://www.youtube.com/@PhysicsbySTC" rel="noopener" target="_blank">
+                WATCH <span class="material-symbols-outlined text-[14px]">play_arrow</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Video Card 4 -->
+<article class="bg-surface-container-low hover:bg-surface-container transition-all rounded-xl overflow-hidden shadow-sm flex flex-col group">
+<div class="w-full aspect-video bg-surface-container-high relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Moment of inertia tensor equations, spinning rigid body cylinder with torque vector cross product, advanced classical mechanics schematic diagram on slate dark academic surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYTCyFabgDjBCEb5_UVO8cDqM4zmdX2q8AXYCZGu4oT-vd5W26WJ6QByxUxgMdp-_jacV2NczUpUXekwQiRpQX_TDYM3BYplj04_mhKW431mSLs-4LIHIyzV2ylCUlh00Sg0nddEZYalo81HS4aSCR6HFyvzpiIBxpg7dxeEeip0IY8jcUMF68eBsKxQgvKBUBnxGavO7fAgCxsH5obd9-B-pbpYbMJDDnAbZISIEHgwC_p5oVzjXa"/>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-white font-label-meta text-[10px]">1:35:00</span>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-on-tertiary-container text-white font-label-meta text-label-meta">JEE ADVANCED</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-meta text-label-meta text-secondary font-bold">ROTATIONAL MOTION // CH-07</span>
+<h4 class="font-title-md text-title-md text-primary font-bold leading-tight">Rotational Dynamics: 25 Master PYQs</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Rolling without slipping on moving inclines, conservation of angular momentum, and hinge reactions.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-meta text-label-meta text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> 31.1k views
+              </span>
+<a class="text-secondary hover:text-primary font-label-meta text-label-meta font-bold flex items-center gap-0.5" href="https://www.youtube.com/@PhysicsbySTC" rel="noopener" target="_blank">
+                WATCH <span class="material-symbols-outlined text-[14px]">play_arrow</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Section 4: Subin Sir's Padlet Digital Wall & Document Hub -->
+<section class="w-full py-space-xl bg-surface-container-low" id="padlet-hub">
+<div class="max-w-[1360px] mx-auto px-gutter flex flex-col gap-space-xl">
+<!-- Padlet Section Header & Integration Banner -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-2 text-secondary font-label-meta text-label-meta tracking-wider">
+<span class="material-symbols-outlined text-[18px]">space_dashboard</span>
+<span>LIVE COLLABORATIVE PADLET ECOSYSTEM</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">Subin Sir's Padlet Document &amp; Derivation Wall</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Explore live digital boards curated in real time with high-resolution handwritten PDF derivations, formula mindmaps, and peer Q&amp;A cards.
+          </p>
+</div>
+<a class="px-5 py-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all flex items-center gap-2 shadow-md shrink-0" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">launch</span><span>Open Full Padlet Board</span></a>
+</div>
+<!-- 4 Pillars of Padlet Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">note_alt</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-bold">Sticky Derivation Notes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Color-coded proof stages, edge assumptions, and common marking errors pointed out with red callouts.</p>
+<span class="font-label-meta text-label-meta text-secondary font-semibold mt-auto pt-2">85+ LIVE PROOFS</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">assignment</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-bold">Handcrafted DPPs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daily practice problem sheets tiered into Level-1 (Board NCERT) and Level-2 (JEE Main/NEET speed).</p>
+<span class="font-label-meta text-label-meta text-secondary font-semibold mt-auto pt-2">120+ PDF SHEETS</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">forum</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-bold">Student Doubt Wall</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Subin Sir personally verifies and annotates tricky question snapshots submitted by enrolled scholars.</p>
+<span class="font-label-meta text-label-meta text-secondary font-semibold mt-auto pt-2">24H RESOLUTION DESK</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">history_edu</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-bold">10-Year Solved Papers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">CBSE All-India &amp; Delhi board question solutions with official marking scheme breakdown by Subin Sir.</p>
+<span class="font-label-meta text-label-meta text-secondary font-semibold mt-auto pt-2">ALL SETS (2015-2024)</span>
+</div>
+</div>
+<!-- Interactive Simulated Padlet Board Preview -->
+<div class="w-full rounded-2xl bg-surface-container-highest/60 p-space-md flex flex-col gap-space-md shadow-inner"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold">Ψ</div><div class="flex flex-col min-w-0"><div class="flex items-center gap-2 flex-wrap"><span class="font-title-md text-title-md text-primary font-bold">Padlet: Physics by STC Official Workspace</span><span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-meta text-[10px] font-bold">LIVE SYNC</span></div><a class="font-label-meta text-label-meta text-secondary hover:underline truncate" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank">padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx</a></div></div><div class="flex items-center gap-2"><a class="px-3 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-meta text-label-meta font-bold flex items-center gap-1 transition-colors" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[15px]">open_in_new</span><span>Open in New Window</span></a></div></div><div class="w-full rounded-xl overflow-hidden shadow-md bg-surface-container-lowest border border-outline-variant/30"><iframe allow="camera;microphone;geolocation" frameborder="0" loading="lazy" src="https://padlet.com/embed/yi2s5ctylln10uhx" style="width:100%;height:580px;display:block;padding:0;margin:0;border:none;border-radius:12px;" title="Physics by STC Live Padlet Wall"></iframe></div><div class="grid grid-cols-1 md:grid-cols-3 gap-space-md" id="padlet-canvas"><div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm transform hover:-translate-y-1 transition-all"><div class="flex items-center justify-between"><span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-meta text-[10px] font-bold">ELECTROSTATICS</span><span class="font-label-meta text-[11px] text-on-surface-variant">Pinned by Subin Sir</span></div><h4 class="font-title-md text-title-md text-on-surface font-bold">Electric Dipole at Axial &amp; Equatorial Point</h4><div class="p-space-sm rounded bg-surface-container font-label-code text-[12px] text-primary">E<sub>axial</sub> = 2kp / r<sup>3</sup> • E<sub>eq</sub> = kp / r<sup>3</sup></div><p class="font-body-sm text-body-sm text-on-surface-variant">Notice the 2:1 ratio for short dipoles! Remember r &gt;&gt; a approximation conditions for the 3-mark board question.</p><div class="pt-2 flex items-center justify-between text-secondary font-label-meta text-label-meta"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">attachment</span> Dipole_Proof_Final.pdf</span><a class="font-bold hover:underline" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank">Download</a></div></div><div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm transform hover:-translate-y-1 transition-all"><div class="flex items-center justify-between"><span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-meta text-[10px] font-bold">RAY OPTICS</span><span class="font-label-meta text-[11px] text-on-surface-variant">Updated 2h ago</span></div><h4 class="font-title-md text-title-md text-on-surface font-bold">Prism Formula &amp; Angle of Minimum Deviation</h4><div class="p-space-sm rounded bg-surface-container font-label-code text-[12px] text-primary">μ = sin[(A + δ<sub>m</sub>)/2] / sin(A/2)</div><p class="font-body-sm text-body-sm text-on-surface-variant">At δ = δ<sub>m</sub>, the refracted ray inside the prism is strictly parallel to the base for equilateral geometry.</p><div class="pt-2 flex items-center justify-between text-secondary font-label-meta text-label-meta"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">attachment</span> Prism_Formula_Annotated.pdf</span><a class="font-bold hover:underline" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank">Download</a></div></div><div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm transform hover:-translate-y-1 transition-all"><div class="flex items-center justify-between"><span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-meta text-[10px] font-bold">CURRENT ELECTRICITY</span><span class="font-label-meta text-[11px] text-on-surface-variant">High Yield</span></div><h4 class="font-title-md text-title-md text-on-surface font-bold">Wheatstone Bridge Null Deflection Proof</h4><div class="p-space-sm rounded bg-surface-container font-label-code text-[12px] text-primary">P / Q = R / S ⇔ V<sub>B</sub> - V<sub>D</sub> = 0</div><p class="font-body-sm text-body-sm text-on-surface-variant">Applying Kirchhoff’s Loop Rules to mesh ABDA and BCDB. Essential for meter bridge experiment numericals.</p><div class="pt-2 flex items-center justify-between text-secondary font-label-meta text-label-meta"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">attachment</span> Wheatstone_Kirchhoff.pdf</span><a class="font-bold hover:underline" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank">Download</a></div></div></div><div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[24px]">folder_shared</span><p class="font-body-sm text-body-sm text-on-surface">Need offline print-ready compilation booklets? All 42 CBSE 12th derivations are collated in one unified Padlet bundle.</p></div><a class="px-4 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-variant text-primary font-label-meta text-label-meta font-bold tracking-wider shrink-0 transition-colors" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank">GET 42-DERIVATION COMPENDIUM (PDF)</a></div></div>
+</div>
+</section>
+<!-- Section 5: Handcrafted Handouts & Derivations Compendium -->
+<section class="w-full py-space-xl bg-surface" id="handouts-compendium">
+<div class="max-w-[1360px] mx-auto px-gutter flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-sm">
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-2 text-primary font-label-meta text-label-meta tracking-wider">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>STRUCTURED ACADEMIC REPOSITORY</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">Handcrafted Handouts &amp; Derivations Compendium</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Exhaustive, LaTeX-verified proof blueprints designed by Subin Sir to secure 100% derivation marks in CBSE Boards and rapid recall in JEE/NEET.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-meta text-label-meta" onclick="filterCompendium('all')">ALL CHAPTERS</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-meta text-label-meta" onclick="filterCompendium('class12')">CLASS 12</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-meta text-label-meta" onclick="filterCompendium('class11')">CLASS 11</button>
+</div>
+</div>
+<!-- 6 Core Chapter Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg"><!-- Module 1: Electrostatics --><div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md group"><div class="flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-meta text-label-meta text-secondary font-bold">MODULE 01 // CLASS 12</span><span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-meta text-[11px] font-bold">WEIGHTAGE: 8 MARKS</span></div><h3 class="font-headline-sm text-headline-sm text-primary font-bold">Electrostatics &amp; Gauss Field Theorems</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Electric fields of wire, infinite sheet, spherical shells, plus electrostatic shielding &amp; capacitance with dielectrics.</p><div class="p-space-sm rounded bg-surface-container font-label-code text-[13px] text-primary shadow-inner">E = σ / 2ε<sub>0</sub> • C = (ε<sub>r</sub> · ε<sub>0</sub> A) / d</div></div><div class="flex items-center justify-between pt-space-xs"><a class="text-secondary hover:text-primary font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">picture_as_pdf</span><span>Padlet Handout</span></a><span class="font-label-meta text-label-meta text-on-surface-variant">6 Full Proofs</span></div></div><!-- Module 2: Alternating Current & EMW --><div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md group"><div class="flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-meta text-label-meta text-secondary font-bold">MODULE 02 // CLASS 12</span><span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-meta text-[11px] font-bold">WEIGHTAGE: 8 MARKS</span></div><h3 class="font-headline-sm text-headline-sm text-primary font-bold">Alternating Current &amp; EM Waves</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Series LCR resonance phasor analysis, Q-factor sharpness derivation, transformer energy losses, and wave velocity.</p><div class="p-space-sm rounded bg-surface-container font-label-code text-[13px] text-primary shadow-inner">ω<sub>0</sub> = 1/√(LC) • c = 1/√(μ<sub>0</sub>ε<sub>0</sub>)</div></div><div class="flex items-center justify-between pt-space-xs"><a class="text-secondary hover:text-primary font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">picture_as_pdf</span><span>Padlet Handout</span></a><span class="font-label-meta text-label-meta text-on-surface-variant">5 Full Proofs</span></div></div><!-- Module 3: Optics (Ray & Wave) --><div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md group"><div class="flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-meta text-label-meta text-secondary font-bold">MODULE 03 // CLASS 12</span><span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-meta text-[11px] font-bold">WEIGHTAGE: 14 MARKS</span></div><h3 class="font-headline-sm text-headline-sm text-primary font-bold">Ray Optics &amp; Wave Optics Complete</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Huygens wave theory reflection/refraction, Young's Double Slit fringe width derivation, and astronomical telescope magnification.</p><div class="p-space-sm rounded bg-surface-container font-label-code text-[13px] text-primary shadow-inner">β = λD / d • 1/f = (μ-1)(1/R<sub>1</sub> - 1/R<sub>2</sub>)</div></div><div class="flex items-center justify-between pt-space-xs"><a class="text-secondary hover:text-primary font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">picture_as_pdf</span><span>Padlet Handout</span></a><span class="font-label-meta text-label-meta text-on-surface-variant">8 Full Proofs</span></div></div><!-- Module 4: Current Electricity & Magnetism --><div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md group"><div class="flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-meta text-label-meta text-secondary font-bold">MODULE 04 // CLASS 12</span><span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-meta text-[11px] font-bold">WEIGHTAGE: 12 MARKS</span></div><h3 class="font-headline-sm text-headline-sm text-primary font-bold">Current Drift &amp; Moving Charges</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Microscopic Ohm's law (j = σE), Biot-Savart law for circular coils, Ampere's law, and Moving Coil Galvanometer sensitivity.</p><div class="p-space-sm rounded bg-surface-container font-label-code text-[13px] text-primary shadow-inner">v<sub>d</sub> = eEτ/m • B = μ<sub>0</sub> I R<sup>2</sup> / 2(R<sup>2</sup>+x<sup>2</sup>)<sup>3/2</sup></div></div><div class="flex items-center justify-between pt-space-xs"><a class="text-secondary hover:text-primary font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">picture_as_pdf</span><span>Padlet Handout</span></a><span class="font-label-meta text-label-meta text-on-surface-variant">7 Full Proofs</span></div></div><!-- Module 5: Modern Physics & Semiconductors --><div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md group"><div class="flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-meta text-label-meta text-secondary font-bold">MODULE 05 // CLASS 12</span><span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-meta text-[11px] font-bold">WEIGHTAGE: 12 MARKS</span></div><h3 class="font-headline-sm text-headline-sm text-primary font-bold">Dual Nature, Atoms &amp; Semiconductors</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Einstein's photoelectric equation, Bohr's quantization postulate, de Broglie wavelength, and p-n junction diode rectification.</p><div class="p-space-sm rounded bg-surface-container font-label-code text-[13px] text-primary shadow-inner">K<sub>max</sub> = hν - Φ<sub>0</sub> • r<sub>n</sub> = 0.529 n<sup>2</sup>/Z Å</div></div><div class="flex items-center justify-between pt-space-xs"><a class="text-secondary hover:text-primary font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">picture_as_pdf</span><span>Padlet Handout</span></a><span class="font-label-meta text-label-meta text-on-surface-variant">6 Full Proofs</span></div></div><!-- Module 6: Kinematics & Mechanics (Class 11 Foundation) --><div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md group"><div class="flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-meta text-label-meta text-secondary font-bold">MODULE 06 // CLASS 11</span><span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-meta text-[11px] font-bold">JEE &amp; NEET BEDROCK</span></div><h3 class="font-headline-sm text-headline-sm text-primary font-bold">Kinematics &amp; Work-Energy Theorem</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Calculus derivation of kinematic equations, projectile trajectories on inclined planes, variable force work integrals.</p><div class="p-space-sm rounded bg-surface-container font-label-code text-[13px] text-primary shadow-inner">W<sub>net</sub> = ΔK • R = (u<sup>2</sup> sin 2θ) / g</div></div><div class="flex items-center justify-between pt-space-xs"><a class="text-secondary hover:text-primary font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">picture_as_pdf</span><span>Padlet Handout</span></a><span class="font-label-meta text-label-meta text-on-surface-variant">9 Full Proofs</span></div></div></div>
+</div>
+</section>
+<!-- Section 6: Subin Sir's Real Blogspot Articles (physicsbystc.blogspot.com) -->
+<section class="w-full py-space-xl bg-surface-container-low" id="blog-articles">
+<div class="max-w-[1360px] mx-auto px-gutter flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-2 text-secondary font-label-meta text-label-meta tracking-wider">
+<span class="material-symbols-outlined text-[18px]">article</span>
+<span>OFFICIAL ESSAYS &amp; PEDAGOGICAL DISPATCHES</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">Subin Sir's Physics Blogspot Gazette</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Philosophical reflections, cognitive studying frameworks, and board exam blueprints published on <span class="font-semibold text-primary">physicsbystc.blogspot.com</span>.
+          </p>
+</div>
+<a class="px-5 py-2.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-high transition-colors font-label-meta text-label-meta tracking-wider font-bold shadow-sm flex items-center gap-1.5 shrink-0" href="https://physicsbystc.blogspot.com" rel="noopener" target="_blank">
+<span>VISIT BLOGSPOT PORTAL</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+<!-- Articles Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Article 1: The Physics of You -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-meta text-label-meta">
+<span>PHILOSOPHY &amp; LIFE</span>
+<span>8 MIN READ</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">The Physics of You: Resonance, Entropy, and Human Momentum</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              How the thermodynamic concept of spontaneous entropy mirrors mental fatigue, and how setting up harmonic resonance in your daily revision routine cures academic burnout.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-meta text-label-meta text-secondary font-bold">BY SUBIN SIR</span>
+<a class="text-primary hover:text-secondary font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://physicsbystc.blogspot.com" rel="noopener" target="_blank">
+              READ ESSAY <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 2: From Projectiles to Professionals -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-meta text-label-meta">
+<span>CAREER &amp; SCIENCE</span>
+<span>6 MIN READ</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">From Projectiles to Professionals: Why Vector Mechanics Shapes Engineers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Why top engineering institutes value candidates who can dismantle multi-dimensional trajectories mentally before ever writing a line of code.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-meta text-label-meta text-secondary font-bold">BY SUBIN SIR</span>
+<a class="text-primary hover:text-secondary font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://physicsbystc.blogspot.com" rel="noopener" target="_blank">
+              READ ESSAY <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 3: 15 Tips to Ace CBSE 12th -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-meta text-label-meta">
+<span>BOARD EXAM BLUEPRINT</span>
+<span>10 MIN READ</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">15 Tactical Tips to Secure 70/70 in CBSE 12th Physics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Step marking secrets, diagram margins, SI unit discipline, and how to format 5-mark derivation questions so CBSE evaluators have zero excuse to deduct marks.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-meta text-label-meta text-secondary font-bold">BY SUBIN SIR</span>
+<a class="text-primary hover:text-secondary font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://physicsbystc.blogspot.com" rel="noopener" target="_blank">
+              READ ESSAY <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 4: How to Study Capacitors -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-meta text-label-meta">
+<span>PEDAGOGY DEEP DIVE</span>
+<span>7 MIN READ</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">How to Study Capacitors Without Falling Into the Dielectric Trap</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Battery connected versus battery disconnected: the golden matrix that resolves 90% of all capacitor configuration confusions in competitive exams.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-meta text-label-meta text-secondary font-bold">BY SUBIN SIR</span>
+<a class="text-primary hover:text-secondary font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://physicsbystc.blogspot.com" rel="noopener" target="_blank">
+              READ ESSAY <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 5: 6 Tips for JEE Numericals -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-meta text-label-meta">
+<span>JEE SPEED &amp; ACCURACY</span>
+<span>5 MIN READ</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">6 Non-Obvious Habits for Rapid JEE Main Numericals</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Dimensional analysis elimination, order-of-magnitude estimates, and checking extreme limiting values (θ → 0, ∞) to solve without quadratic equations.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-meta text-label-meta text-secondary font-bold">BY SUBIN SIR</span>
+<a class="text-primary hover:text-secondary font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://physicsbystc.blogspot.com" rel="noopener" target="_blank">
+              READ ESSAY <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 6: STC Student Manifesto -->
+<article class="bg-primary-container text-on-primary rounded-xl p-space-lg shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-surface-variant font-label-meta text-label-meta">
+<span>STC ACADEMIC MANIFESTO</span>
+<span>SPECIAL RELEASE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary font-bold">The STC Code of Theoretical Rigour &amp; Hard Work</h3>
+<p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">
+              “We don’t guess. We derive. We test our assumptions against nature’s boundary conditions.” The foundational philosophy behind our students’ consistent rank dominance.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-meta text-label-meta text-secondary-container font-bold">FACULTY SIGNED</span>
+<a class="text-on-primary hover:text-secondary-fixed font-label-meta text-label-meta font-bold flex items-center gap-1" href="https://physicsbystc.blogspot.com" rel="noopener" target="_blank">
+              READ MANIFESTO <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Section 7: Interactive Physical Constants Toolkit -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1360px] mx-auto px-gutter flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pb-space-xs">
+<div>
+<span class="font-label-meta text-label-meta text-secondary tracking-wider font-bold">HIGH PRECISION LABORATORY BENCH</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Interactive Physical Constants Toolkit</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standardized SI numerical values for instantaneous calculation and TeX formulation. Click to copy.</p>
+</div>
+<div class="hidden px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-meta text-label-meta font-bold animate-pulse" id="copy-toast">
+          COPIED TO CLIPBOARD
+        </div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-space-sm">
+<!-- Constant 1: Permittivity -->
+<button class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-all flex flex-col gap-1 shadow-sm group" onclick="copyConstant('8.854187817e-12', 'ε₀')">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-meta text-label-meta">ε₀ • Permittivity</span>
+<span class="material-symbols-outlined text-[16px] group-hover:text-primary transition-colors">content_copy</span>
+</div>
+<span class="font-label-code text-[15px] font-bold text-primary">8.854 × 10⁻¹²</span>
+<span class="font-label-meta text-[10px] text-on-surface-variant">F · m⁻¹ (Vacuum)</span>
+</button>
+<!-- Constant 2: Permeability -->
+<button class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-all flex flex-col gap-1 shadow-sm group" onclick="copyConstant('1.25663706e-6', 'μ₀')">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-meta text-label-meta">μ₀ • Permeability</span>
+<span class="material-symbols-outlined text-[16px] group-hover:text-primary transition-colors">content_copy</span>
+</div>
+<span class="font-label-code text-[15px] font-bold text-primary">4π × 10⁻⁷</span>
+<span class="font-label-meta text-[10px] text-on-surface-variant">T · m · A⁻¹</span>
+</button>
+<!-- Constant 3: Planck's -->
+<button class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-all flex flex-col gap-1 shadow-sm group" onclick="copyConstant('6.62607015e-34', 'h')">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-meta text-label-meta">h • Planck's</span>
+<span class="material-symbols-outlined text-[16px] group-hover:text-primary transition-colors">content_copy</span>
+</div>
+<span class="font-label-code text-[15px] font-bold text-primary">6.626 × 10⁻³⁴</span>
+<span class="font-label-meta text-[10px] text-on-surface-variant">J · s (Exact)</span>
+</button>
+<!-- Constant 4: Elementary Charge -->
+<button class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-all flex flex-col gap-1 shadow-sm group" onclick="copyConstant('1.60217663e-19', 'e')">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-meta text-label-meta">e • Ele. Charge</span>
+<span class="material-symbols-outlined text-[16px] group-hover:text-primary transition-colors">content_copy</span>
+</div>
+<span class="font-label-code text-[15px] font-bold text-primary">1.602 × 10⁻¹⁹</span>
+<span class="font-label-meta text-[10px] text-on-surface-variant">Coulombs (C)</span>
+</button>
+<!-- Constant 5: Speed of Light -->
+<button class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-all flex flex-col gap-1 shadow-sm group" onclick="copyConstant('299792458', 'c')">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-meta text-label-meta">c • Light Speed</span>
+<span class="material-symbols-outlined text-[16px] group-hover:text-primary transition-colors">content_copy</span>
+</div>
+<span class="font-label-code text-[15px] font-bold text-primary">2.998 × 10⁸</span>
+<span class="font-label-meta text-[10px] text-on-surface-variant">m · s⁻¹</span>
+</button>
+<!-- Constant 6: Electron Mass -->
+<button class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-all flex flex-col gap-1 shadow-sm group" onclick="copyConstant('9.1093837e-31', 'm_e')">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-meta text-label-meta">m<sub>e</sub> • Electron Mass</span>
+<span class="material-symbols-outlined text-[16px] group-hover:text-primary transition-colors">content_copy</span>
+</div>
+<span class="font-label-code text-[15px] font-bold text-primary">9.109 × 10⁻³¹</span>
+<span class="font-label-meta text-[10px] text-on-surface-variant">kg (Rest Mass)</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 8: Ask Subin Sir a Doubt & Academic Admissions -->
+<section class="w-full py-space-xl bg-surface-container-low" id="ask-subin-sir">
+<div class="max-w-[1360px] mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Academic Cohorts -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1">
+<span class="font-label-meta text-label-meta text-secondary font-bold tracking-wider">ADMISSIONS &amp; GUIDANCE 2025</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">Coaching Cohorts &amp; Direct Mentorship</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Small-batch intensive pedagogy with direct personal oversight from Subin Sir. Choose your target track:
+          </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm"><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm"><div class="flex flex-col gap-1"><span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-meta text-[10px] font-bold w-fit">CORE BOARD</span><h3 class="font-title-md text-title-md text-primary font-bold">CBSE 70/70 Mastery</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Exhaustive NCERT line-by-line decoding, 42 board derivations, and past 15-year mock tests with individualized correction.</p></div><div class="flex items-center justify-between pt-2 border-t border-outline-variant/30"><span class="font-label-meta text-label-meta text-secondary font-semibold">Limited to 25</span><a class="font-label-meta text-label-meta font-bold text-primary hover:text-secondary flex items-center gap-0.5" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20am%20interested%20in%20joining%20the%20CBSE%2070%2F70%20Mastery%20Batch" rel="noopener noreferrer" target="_blank">ENROLL <span class="material-symbols-outlined text-[13px]">arrow_forward</span></a></div></div><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm"><div class="flex flex-col gap-1"><span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-meta text-[10px] font-bold w-fit">ADVANCED</span><h3 class="font-title-md text-title-md text-primary font-bold">JEE Main &amp; Advanced</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Calculus-heavy mechanics, electrodynamics, thermodynamics, and multi-concept problem synthesis drills.</p></div><div class="flex items-center justify-between pt-2 border-t border-outline-variant/30"><span class="font-label-meta text-label-meta text-secondary font-semibold">Tier-1 Rank</span><a class="font-label-meta text-label-meta font-bold text-primary hover:text-secondary flex items-center gap-0.5" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20am%20interested%20in%20JEE%20Main%20%26%20Advanced%20Coaching" rel="noopener noreferrer" target="_blank">ENROLL <span class="material-symbols-outlined text-[13px]">arrow_forward</span></a></div></div><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm"><div class="flex flex-col gap-1"><span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-meta text-[10px] font-bold w-fit">MEDICAL ACCELERATOR</span><h3 class="font-title-md text-title-md text-primary font-bold">NEET Speed &amp; Accuracy</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Eliminating numerical fear through 45-second mental heuristics, high-yield formula triggers, and zero-error test habits.</p></div><div class="flex items-center justify-between pt-2 border-t border-outline-variant/30"><span class="font-label-meta text-label-meta text-secondary font-semibold">Target: 165+</span><a class="font-label-meta text-label-meta font-bold text-primary hover:text-secondary flex items-center gap-0.5" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20am%20interested%20in%20NEET%20Medical%20Physics%20Batch" rel="noopener noreferrer" target="_blank">ENROLL <span class="material-symbols-outlined text-[13px]">arrow_forward</span></a></div></div><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm"><div class="flex flex-col gap-1"><span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-meta text-[10px] font-bold w-fit">PERSONAL CLINIC</span><h3 class="font-title-md text-title-md text-primary font-bold">1-on-1 Doubt &amp; Strategy</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Direct appointment sessions with Subin Sir to unblock conceptual blind spots in weak chapters before exam week.</p></div><div class="flex items-center justify-between pt-2 border-t border-outline-variant/30"><span class="font-label-meta text-label-meta text-secondary font-semibold">By Reservation</span><a class="font-label-meta text-label-meta font-bold text-primary hover:text-secondary flex items-center gap-0.5" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20would%20like%20to%20book%20a%201-on-1%20Doubt%20%26%20Strategy%20Slot" rel="noopener noreferrer" target="_blank">BOOK SLOT <span class="material-symbols-outlined text-[13px]">arrow_forward</span></a></div></div></div>
+</div>
+<!-- Right Column: Interactive WhatsApp Doubt Submission Desk -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-2xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">help_center</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-bold">Submit a Doubt to Subin Sir</h3>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-meta text-label-meta font-bold">DIRECT TO WHATSAPP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Fill in your query details below. Clicking “Transmit Doubt via WhatsApp” will format and open your query directly in Subin Sir's WhatsApp triage desk for prompt response.
+        </p>
+<form class="flex flex-col gap-space-sm" id="doubt-form" onsubmit="transmitDoubt(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm"><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm"><div class="flex flex-col gap-1"><span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-meta text-[10px] font-bold w-fit">CORE BOARD</span><h3 class="font-title-md text-title-md text-primary font-bold">CBSE 70/70 Mastery</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Exhaustive NCERT line-by-line decoding, 42 board derivations, and past 15-year mock tests with individualized correction.</p></div><div class="flex items-center justify-between pt-2 border-t border-outline-variant/30"><span class="font-label-meta text-label-meta text-secondary font-semibold">Limited to 25</span><a class="font-label-meta text-label-meta font-bold text-primary hover:text-secondary flex items-center gap-0.5" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20am%20interested%20in%20joining%20the%20CBSE%2070%2F70%20Mastery%20Batch" rel="noopener noreferrer" target="_blank">ENROLL <span class="material-symbols-outlined text-[13px]">arrow_forward</span></a></div></div><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm"><div class="flex flex-col gap-1"><span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-meta text-[10px] font-bold w-fit">ADVANCED</span><h3 class="font-title-md text-title-md text-primary font-bold">JEE Main &amp; Advanced</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Calculus-heavy mechanics, electrodynamics, thermodynamics, and multi-concept problem synthesis drills.</p></div><div class="flex items-center justify-between pt-2 border-t border-outline-variant/30"><span class="font-label-meta text-label-meta text-secondary font-semibold">Tier-1 Rank</span><a class="font-label-meta text-label-meta font-bold text-primary hover:text-secondary flex items-center gap-0.5" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20am%20interested%20in%20JEE%20Main%20%26%20Advanced%20Coaching" rel="noopener noreferrer" target="_blank">ENROLL <span class="material-symbols-outlined text-[13px]">arrow_forward</span></a></div></div><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm"><div class="flex flex-col gap-1"><span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-meta text-[10px] font-bold w-fit">MEDICAL ACCELERATOR</span><h3 class="font-title-md text-title-md text-primary font-bold">NEET Speed &amp; Accuracy</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Eliminating numerical fear through 45-second mental heuristics, high-yield formula triggers, and zero-error test habits.</p></div><div class="flex items-center justify-between pt-2 border-t border-outline-variant/30"><span class="font-label-meta text-label-meta text-secondary font-semibold">Target: 165+</span><a class="font-label-meta text-label-meta font-bold text-primary hover:text-secondary flex items-center gap-0.5" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20am%20interested%20in%20NEET%20Medical%20Physics%20Batch" rel="noopener noreferrer" target="_blank">ENROLL <span class="material-symbols-outlined text-[13px]">arrow_forward</span></a></div></div><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm"><div class="flex flex-col gap-1"><span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-meta text-[10px] font-bold w-fit">PERSONAL CLINIC</span><h3 class="font-title-md text-title-md text-primary font-bold">1-on-1 Doubt &amp; Strategy</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Direct appointment sessions with Subin Sir to unblock conceptual blind spots in weak chapters before exam week.</p></div><div class="flex items-center justify-between pt-2 border-t border-outline-variant/30"><span class="font-label-meta text-label-meta text-secondary font-semibold">By Reservation</span><a class="font-label-meta text-label-meta font-bold text-primary hover:text-secondary flex items-center gap-0.5" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20would%20like%20to%20book%20a%201-on-1%20Doubt%20%26%20Strategy%20Slot" rel="noopener noreferrer" target="_blank">BOOK SLOT <span class="material-symbols-outlined text-[13px]">arrow_forward</span></a></div></div></div>
+<div class="flex flex-col gap-1">
+<label class="font-label-meta text-label-meta text-on-surface-variant">PHYSICS CHAPTER / TOPIC *</label>
+<input class="px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary-container" id="chapter-name" placeholder="e.g., Electromagnetic Induction &amp; Faraday's Law" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-meta text-label-meta text-on-surface-variant">EXACT QUESTION / CONCEPTUAL ROADBLOCK *</label>
+<textarea class="px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary-container" id="doubt-text" placeholder="Explain where you are stuck, or describe the numerical parameters..." required="" rows="3"></textarea>
+</div>
+<button class="w-full py-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-bold transition-all shadow-md flex items-center justify-center gap-2 mt-2" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Transmit Doubt via WhatsApp</span>
+</button>
+</form>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-meta text-label-meta pt-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
+<span>Verified response guaranteed within 24 hours by Subin Sir or Senior STC Teaching Assistant.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating Sticky WhatsApp Quick Connect Badge -->
+<aside aria-label="Quick Connect Desk" class="fixed bottom-6 right-6 z-40">
+<a class="flex items-center gap-2.5 px-4 py-3 rounded-full bg-primary text-on-primary hover:bg-primary-container shadow-2xl transition-all transform hover:scale-105 active:scale-95 group focus:outline-none" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20have%20a%20physics%20doubt%20and%20would%20like%20guidance" rel="noopener" target="_blank">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</div>
+<div class="flex flex-col pr-1">
+<span class="font-label-meta text-[10px] text-secondary-fixed uppercase leading-tight font-bold">DOUBTS &amp; ADMISSIONS</span>
+<span class="font-title-md text-[14px] leading-tight font-bold">Ask Subin Sir</span>
+</div>
+</a>
+</aside>
+<!-- Lightweight Script for Client-Side Micro-Interactions -->
+<script>
+    function copyEquation(tex, btn) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(tex);
+      }
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[13px]">check</span><span>Copied!</span>';
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 1800);
+    }
+
+    function copyConstant(val, label) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(val);
+      }
+      const toast = document.getElementById('copy-toast');
+      if (toast) {
+        toast.textContent = label + ' COPIED (' + val + ')';
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 2200);
+      }
+    }
+
+    function switchPadletTab(tabKey) {
+      const tabs = ['derivations', 'mindmaps', 'doubts'];
+      tabs.forEach(t => {
+        const btn = document.getElementById('tab-' + t);
+        if (btn) {
+          if (t === tabKey) {
+            btn.className = 'px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-meta text-label-meta transition-all font-semibold';
+          } else {
+            btn.className = 'px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-meta text-label-meta transition-all';
+          }
+        }
+      });
+
+      const canvas = document.getElementById('padlet-canvas');
+      if (!canvas) return;
+
+      if (tabKey === 'mindmaps') {
+        canvas.innerHTML = `
+          <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+            <span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-meta text-[10px] font-bold w-fit">NEET SPEED MAP</span>
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">Ray Optics Formula Tree & Sign Conventions</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">All 14 optic equations plotted on a single visual node map with focal length polarity rules.</p>
+            <span class="font-label-meta text-label-meta text-secondary font-bold pt-2">VIEW IN PADLET (PNG HIGH-RES)</span>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+            <span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-meta text-[10px] font-bold w-fit">JEE ADVANCED</span>
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">Modern Physics: Photons to Radioactivity Mindmap</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">De Broglie wavelength dependencies, Bohr model ratios, and radioactive decay differential flows.</p>
+            <span class="font-label-meta text-label-meta text-secondary font-bold pt-2">VIEW IN PADLET (PNG HIGH-RES)</span>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+            <span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-meta text-[10px] font-bold w-fit">CLASS 11 BEDROCK</span>
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">Rotational Motion & Moment of Inertia Table</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Parallel and perpendicular axis theorem diagrams for rings, discs, solid spheres, and rods.</p>
+            <span class="font-label-meta text-label-meta text-secondary font-bold pt-2">VIEW IN PADLET (PNG HIGH-RES)</span>
+          </div>
+        `;
+      } else if (tabKey === 'doubts') {
+        canvas.innerHTML = `
+          <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+            <span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-meta text-[10px] font-bold w-fit">SOLVED BY SUBIN SIR</span>
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">Doubt: Infinite Ladder Resistance Network</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">&ldquo;How do we set up the quadratic equation R_eq = R1 + (R2 || R_eq)?&rdquo; Detailed 4-step handwritten proof attached.</p>
+            <span class="font-label-meta text-label-meta text-secondary font-bold pt-2">STATUS: RESOLVED &bull; 18 COMMENTS</span>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+            <span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-meta text-[10px] font-bold w-fit">SOLVED BY SUBIN SIR</span>
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">Doubt: LCR Circuit Current Phase at Resonance</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">&ldquo;Why does voltage lead current in pure inductor but cancel with capacitor at omega_0?&rdquo; Phasor diagram explained.</p>
+            <span class="font-label-meta text-label-meta text-secondary font-bold pt-2">STATUS: RESOLVED &bull; 24 COMMENTS</span>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+            <span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-meta text-[10px] font-bold w-fit">SOLVED BY SUBIN SIR</span>
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">Doubt: Why is E=0 inside a hollow charged conductor?</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Gauss law proof with mathematical argument on lack of enclosed charge in Gaussian interior surface.</p>
+            <span class="font-label-meta text-label-meta text-secondary font-bold pt-2">STATUS: RESOLVED &bull; 9 COMMENTS</span>
+          </div>
+        `;
+      } else {
+        canvas.innerHTML = `
+          <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+            <div class="flex items-center justify-between">
+              <span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-meta text-[10px] font-bold">ELECTROSTATICS</span>
+              <span class="font-label-meta text-[11px] text-on-surface-variant">Pinned by Subin Sir</span>
+            </div>
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">Electric Dipole at Axial & Equatorial Point</h4>
+            <div class="p-space-sm rounded bg-surface-container font-label-code text-[12px] text-primary">
+              E_axial = 2kp / r^3 • E_eq = kp / r^3
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Notice the 2:1 ratio for short dipoles! Remember r >> a approximation conditions for the 3-mark board question.</p>
+            <div class="pt-2 flex items-center justify-between text-secondary font-label-meta text-label-meta">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">attachment</span> Dipole_Proof_Final.pdf</span>
+              <a href="https://padlet.com" target="_blank" rel="noopener" class="font-bold hover:underline">Download</a>
+            </div>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+            <div class="flex items-center justify-between">
+              <span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-meta text-[10px] font-bold">RAY OPTICS</span>
+              <span class="font-label-meta text-[11px] text-on-surface-variant">Updated 2h ago</span>
+            </div>
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">Prism Formula & Angle of Minimum Deviation</h4>
+            <div class="p-space-sm rounded bg-surface-container font-label-code text-[12px] text-primary">
+              mu = sin[(A + delta_m)/2] / sin(A/2)
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">At delta = delta_m, the refracted ray inside the prism is strictly parallel to the base for equilateral geometry.</p>
+            <div class="pt-2 flex items-center justify-between text-secondary font-label-meta text-label-meta">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">attachment</span> Prism_Formula_Annotated.pdf</span>
+              <a href="https://padlet.com" target="_blank" rel="noopener" class="font-bold hover:underline">Download</a>
+            </div>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+            <div class="flex items-center justify-between">
+              <span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-meta text-[10px] font-bold">CURRENT ELECTRICITY</span>
+              <span class="font-label-meta text-[11px] text-on-surface-variant">High Yield</span>
+            </div>
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">Wheatstone Bridge Null Deflection Proof</h4>
+            <div class="p-space-sm rounded bg-surface-container font-label-code text-[12px] text-primary">
+              P / Q = R / S <=> V_B - V_D = 0
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Applying Kirchhoff's Loop Rules to mesh ABDA and BCDB. Essential for meter bridge experiment numericals.</p>
+            <div class="pt-2 flex items-center justify-between text-secondary font-label-meta text-label-meta">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">attachment</span> Wheatstone_Kirchhoff.pdf</span>
+              <a href="https://padlet.com" target="_blank" rel="noopener" class="font-bold hover:underline">Download</a>
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    function filterCompendium(type) {
+      alert("Filtering compendium for: " + type.toUpperCase() + ". All modules rendered with high-contrast LaTeX expressions.");
+    }
+
+    function launchVideoModal(title) {
+      alert("Opening YouTube Masterclass: " + title + " in player theater mode.");
+    }
+
+    function transmitDoubt(e) {
+      e.preventDefault();
+      const name = document.getElementById('student-name').value;
+      const exam = document.getElementById('exam-target').value;
+      const chapter = document.getElementById('chapter-name').value;
+      const query = document.getElementById('doubt-text').value;
+
+      const message = `Hello Subin Sir, I am ${name} targeting ${exam}.%0A%0A*Chapter:* ${chapter}%0A*Question Query:* ${query}%0A%0APlease guide me when you are free from class lectures.`;
+      const url = `https://wa.me/?text=${message}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1360px] mx-auto px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold">Ψ</div><span class="font-headline-sm text-headline-sm font-bold text-primary">PHYSICS <span class="text-secondary">STC</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Theoretical rigour and modern conceptual physics learning orchestrated by Subin Sir. Empowering scholars for CBSE Board Masteries, JEE Advanced, and NEET rank excellence.</p><div class="flex items-center gap-space-xs mt-1"><span class="px-2 py-0.5 rounded-lg bg-surface-container-high text-primary font-label-meta text-label-meta uppercase tracking-wider">ISO Academic Rigour</span><span class="px-2 py-0.5 rounded-lg bg-surface-container-high text-secondary font-label-meta text-label-meta uppercase tracking-wider">Est. 2014</span></div></div><div class="flex flex-col gap-space-xs"><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">Academic Programs</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#ask-subin-sir">CBSE 12th Board Core Series</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#ask-subin-sir">JEE Main &amp; Advanced Modules</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#ask-subin-sir">NEET Medical Physics Accelerator</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank">Derivations &amp; LaTeX Repository</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="https://www.youtube.com/@PhysicsbySTC" rel="noopener noreferrer" target="_blank">YouTube Masterclass Vault</a></div><div class="flex flex-col gap-space-xs"><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">Scholastic Resources</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="https://padlet.com/fiziks/physics-by-stc-yi2s5ctylln10uhx" rel="noopener noreferrer" target="_blank">Community Padlet Discussion Wall</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="https://physicsbystc.blogspot.com/" rel="noopener noreferrer" target="_blank">Blogspot Physical Reviews &amp; Articles</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#ask-subin-sir">Direct Doubt Query Desk</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="https://www.linkedin.com/in/subinthomas-educator" rel="noopener noreferrer" target="_blank">Er. Subin Sir LinkedIn Profile</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Contact &amp; Support</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Subin Sir Physics Center, Academic Avenue, STC Complex.</p><div class="flex flex-col gap-1.5 text-body-sm font-body-sm"><a class="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors font-medium" href="https://wa.me/917025920971?text=Hi%20Subin%20Sir%2C%20I%20have%20an%20enquiry%20regarding%20Physics%20by%20STC" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp: +91 70259 20971</a><a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors" href="https://www.youtube.com/@PhysicsbySTC" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px] text-error">smart_display</span>YouTube: @PhysicsbySTC</a><a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors" href="https://www.linkedin.com/in/subinthomas-educator" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">person</span>LinkedIn: Subin Thomas</a><a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors" href="mailto:contact@physicsbystc.com"><span class="material-symbols-outlined text-[18px]">mail</span>contact@physicsbystc.com</a><span class="inline-flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">schedule</span>Mon – Sat: 08:00 – 20:00 IST</span></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-meta text-label-meta text-on-surface-variant"><p>© 2025 Physics by STC. Dedicated to Empirical Precision and Physics Mastery.</p><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="home" href="#">PRIVACY PROTOCOL</a><a class="hover:text-on-surface transition-colors" data-path="home" href="#">ACADEMIC HONOR CODE</a><a class="hover:text-on-surface transition-colors" data-path="home" href="#">TERMS OF PEDAGOGY</a></div></div></div></footer></body></html>
